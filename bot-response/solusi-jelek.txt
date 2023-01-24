@@ -1,0 +1,2 @@
+Error
+Pesan : "Tolong jangan menanyakan hal yang tidak dapat dijawab"
