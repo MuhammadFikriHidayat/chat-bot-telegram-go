@@ -50,30 +50,6 @@ func main() {
 
 				bot.Send(msg)
 
-			} else if strings.Contains(update.Message.Text, "apa arti kep") {
-				message, err := os.ReadFile("bot-response/arti-kep.txt")
-				if err != nil {
-					log.Fatal(err)
-				}
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, string(message))
-				msg.ReplyToMessageID = update.Message.MessageID
-
-				bot.Send(msg)
-
-			} else if strings.Contains(update.Message.Text, "nama peliharaan kep") {
-				message := fmt.Sprintf("%s", update.Message.From.UserName)
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, string(message))
-				msg.ReplyToMessageID = update.Message.MessageID
-
-				bot.Send(msg)
-
-			} else if strings.Contains(update.Message.Text, "judul skripsi kep") {
-				message := fmt.Sprintf("Memahami Bacotan %s Menggunakan Algoritma Huffman", update.Message.From.UserName)
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, string(message))
-				msg.ReplyToMessageID = update.Message.MessageID
-
-				bot.Send(msg)
-
 			} else if strings.Contains(update.Message.Text, "kenapa saya jelek") {
 				message, err := os.ReadFile("bot-response/kenapa-jelek.txt")
 				if err != nil {
@@ -106,16 +82,6 @@ func main() {
 
 			} else if strings.Contains(update.Message.Text, "solusi agar tidak bau") {
 				message, err := os.ReadFile("bot-response/solusi-bau.txt")
-				if err != nil {
-					log.Fatal(err)
-				}
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, string(message))
-				msg.ReplyToMessageID = update.Message.MessageID
-
-				bot.Send(msg)
-
-			} else if strings.Contains(update.Message.Text, "nyanyikan saya lagu") {
-				message, err := os.ReadFile("bot-response/nyanyikan-lagu.txt")
 				if err != nil {
 					log.Fatal(err)
 				}
