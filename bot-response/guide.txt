@@ -1,9 +1,6 @@
 Silahkan masukkan perintah berikut :
 - siapa kamu
 - siapa saya
-- apa arti kep
-- nama peliharaan kep
-- judul skripsi kep
 - kenapa saya jelek
 - kenapa saya bau
 - solusi agar tidak bau 
